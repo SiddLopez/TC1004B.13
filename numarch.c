@@ -9,7 +9,7 @@ int main() {
         close(STDIN_FILENO);
         dup(fd[0]);
         close(fd[1]);
-        execlp("wc", "wc", "-1", NULL);
+        execlp("wc", "wc", "-l", NULL);
     } else{
         close(STDOUT_FILENO);
         dup(fd[1]);
